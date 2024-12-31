@@ -1,0 +1,27 @@
+:root {
+    --primary-color: #0093AE;
+    --secondary-color: #757575;
+    --accent-color: #00C8EC;
+    --light-gray: #ECECEC;
+    --background: #D0D0CF;
+  }
+  
+  body {
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  h1, h2, h3 {
+    font-weight: 700;
+  }
+  
+  button:hover {
+    background-color: var(--accent-color);
+    border-color: var(--primary-color);
+  }
+  
+  .feature-icon {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 0.75rem;
+  }
+  

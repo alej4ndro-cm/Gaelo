@@ -1,9 +1,9 @@
 :root {
     --primary-color: #0093AE;
-    --secondary-color: #757575;
+    --secondary-color: #A0A0A0;;
     --accent-color: #00C8EC;
-    --light-gray: #ECECEC;
-    --background: #D0D0CF;
+    --light-gray: #FFFFFF;
+    --background: #ECECEC;
 }
 
 body {
@@ -13,6 +13,7 @@ body {
 }
 
 h1, h2, h3 {
+    font-family: 'Bahnschrift', sans-serif; /* Headlines */
     font-weight: 700;
     line-height: 1.2;
     margin-bottom: 1rem;
@@ -23,6 +24,10 @@ h2 {
     text-align: center; /* Center all section titles */
     color: var(--primary-color); /* Use primary color for titles */
     margin-bottom: 2rem; /* Add space below titles */
+}
+
+p, a, span {
+    font-family: 'Helvetica Neue', Arial, sans-serif; /* Body text */
 }
 
 .navbar {
@@ -56,6 +61,7 @@ h2 {
     background-color: var(--background);
     padding: 3rem 0;
 }
+
 
 .btn-primary {
     background-color: var(--primary-color);
@@ -120,6 +126,31 @@ h2 {
     width: 2rem;
     height: 2rem;
 }
+
+#testimonials {
+    position: relative;
+    background-color: var(--light-gray);
+    padding: 3rem 0;
+    z-index: 1;
+}
+
+.card {
+    background-color: white; /* Ensure cards have a clean white background */
+    border: none; /* Remove borders for a clean look */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+    border-radius: 0.5rem; /* Smooth edges for a modern look */
+}
+
+.card-body {
+    padding: 1.5rem; /* Ensure consistent spacing inside the cards */
+    text-align: center; /* Center align text content */
+}
+
+.card:hover {
+    transform: scale(1.03); /* Add hover effect for interactivity */
+    transition: transform 0.3s ease; /* Smooth scaling effect */
+}
+  
 
 footer {
     background-color: var(--light-gray); /* Light gray background */

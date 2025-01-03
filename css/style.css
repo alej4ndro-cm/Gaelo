@@ -62,7 +62,6 @@ p, a, span {
     padding: 3rem 0;
 }
 
-
 .btn-primary {
     background-color: var(--primary-color);
     border-color: var(--accent-color);
@@ -178,4 +177,10 @@ footer a {
 footer a:hover {
     color: var(--primary-color);
     text-decoration: underline;
+}
+/* Ensure navbar contact section hides on small screens */
+@media (max-width: 768px) {
+  .navbar-contact {
+    display: none !important; /* Forces it to hide */
+  }
 }
